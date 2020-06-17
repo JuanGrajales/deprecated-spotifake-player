@@ -1,46 +1,4 @@
-<!DOCTYPE html> 
-<!-- All HTML files must have <!DOCTYPE html> as the first line, it tells the browser what document type it will receive. 
-Resource: https://www.w3schools.com/tags/tag_doctype.asp -->
-<!-- The html tag is the container for all other HTML elements. The lang attribute specifies the language of the Web page. 
-Resources: https://www.w3schools.com/tags/tag_html.asp, https://www.w3schools.com/tags/ref_language_codes.asp -->
-<html lang="en">
-    <!-- The head tag is the container for all metadata. Metadata is data about data. You will understand once you review the meta tags -->
-    <head>
-        <!-- The meta tag defines metadata about the HTML document. -->
-        <!-- The charset attribute specifies which characters the HTML file will support. UTF-8 covers almost all the characts, punctuations, and symbols in the world.
-        Resource: https://www.w3schools.com/tags/att_meta_charset.asp, https://www.w3schools.com/charsets/ref_html_utf8.asp-->
-        <meta charset="UTF-8">
-        <!-- This lines makes sure your content scale properly on all devices. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- Here we can define the documents title. The title will be in displayed on the browsers title bar or tab. -->
-        <title>Spotifake Player</title>
-        <!-- Add icon new to title. -->
-        <link rel="icon" href="./memoji.jpg">
-        <!-- Link the an external style sheet. -->
-        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <!-- HTML tags resource: https://www.w3schools.com/TAGS/default.asp -->
-        <h1>No songs selected</h1>
-        <!-- The label tag is used to define the label for the input tag.  -->
-        <label class='file-upload'>
-            <!-- The type attribute specifies the type of input, in this case a file, name attribute specifies the name of the input, and multiple allows the user to upload multiple files instead of one. -->
-            <input type="file" name='songs' multiple>
-            Click here to add your songs! 🎶
-        </label>
-        <!-- This tag is used to embed sound content. Supported formats: MP3, WAV, OGG. You can add the controls attribute but we will make our own custom controls. -->
-        <audio></audio>
-        <!-- <audio src='song1.mp3'></audio> -->
-        <div id="buttons">
-            <button id="prev">⏮</button>
-            <button id="play">▶️</button>
-            <button id="next">⏭</button>
-        </div>
-    </body>
-    <script>    // show how to link src='index.js' if you have time
-        // JS resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+// JS resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript
         // DOM resource: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 
         let songs = [];
@@ -123,5 +81,3 @@ Resources: https://www.w3schools.com/tags/tag_html.asp, https://www.w3schools.co
                 playSong();
             }
         }
-    </script>
-</html>
