@@ -1,5 +1,16 @@
 /* CSS properties resource: https://www.w3schools.com/cssref/default.asp */
 
+* {
+    /* transition: https://css-tricks.com/almanac/properties/t/transition/ */
+    transition: all 1s;
+}
+
+/* pseudo classes https://css-tricks.com/pseudo-class-selectors/ */
+/* h1:hover {
+    color: blue;
+    transition: background-color 2s;
+} */
+
 body {
     background-color: #1c1c1c;
     color: white;
@@ -12,7 +23,7 @@ body {
 /* overflow: https://css-tricks.com/almanac/properties/o/overflow/ */
 /* h1 {
     border: 5px solid red;
-    font-size: 48px;
+    font-size: 72px;
     height: 30px;
     overflow: scroll;
     overflow: hidden;
